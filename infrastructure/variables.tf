@@ -15,3 +15,15 @@ variable "account_number" {
 variable "region" {
   default = "us-east-1"
 }
+
+variable "aws_region" {
+  default = "us-east-1"
+}
+
+variable "lambda_function_name" {
+  default = "ExecutaEMR"
+}
+
+variable "key_pair_name" {
+  default = "aws-jpsr-rais"
+}
