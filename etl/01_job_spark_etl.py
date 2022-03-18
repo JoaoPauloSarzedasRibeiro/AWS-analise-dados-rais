@@ -1,14 +1,10 @@
 from pyspark.sql import functions as f
 from pyspark.sql import SparkSession
 
-# Cria objeto da Spark Session
-spark = (SparkSession.builder.appName("DeltaExercise")
-    .config("spark.jars.packages", "io.delta:delta-core_2.12:1.0.0")
-    .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
-    .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
+spark = (
+    SparkSession.builder.appName("ExerciseSpark")
     .getOrCreate()
 )
-
 
 #Ler os dados da rais 2020
 rais = (
