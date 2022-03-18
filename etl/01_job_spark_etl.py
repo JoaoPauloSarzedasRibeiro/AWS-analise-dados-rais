@@ -83,10 +83,6 @@ rais = (
     .withColumnRenamed('Ind Trab Parcial', 'ind_trab_parcial')
 )
 
-# Para que o comando explain() funcione
-from py4j.java_gateway import java_import
-java_import(spark._sc._jvm, "org.apache.spark.sql.api.python.*")
-
 # Construindo a coluna 'uf' com o codigo do estado, que seria os dois primeiros numeros do codigo do municipio
 rais = rais.withColumn("uf", f.col("municipio").cast('string').substr(1,2).cast('int'))
 
@@ -116,7 +112,7 @@ rais = (
     rais
     .write
     .mode('overwrite')
-    .partitionBy('ano', 'uf')
+    .partitionBy('uf')
     .format('parquet')
     .save('s3://datalake-tf-703165468389-rais/consumer-zone/rais/')
 )
