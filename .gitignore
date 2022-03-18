@@ -1,6 +1,9 @@
 *.csv
 *.exe
 *.txt
+emr-rais.ipynb
+joaopauloribeiro-trabalhopratico1.ipynb
+
 
 # RAIS_VINC_PUB_SP.txt
 # RAIS_VINC_PUB_NORDESTE.txt
