@@ -20,18 +20,18 @@
 #   key    = "raw-data/rais/RAIS_VINC_PUB_NORDESTE.txt"
 #   acl    = "private"
 #   source = "../data/RAIS_VINC_PUB_NORDESTE.txt"
-#   etag   = filemd5("../data/RAIS_VINC_PUB_NORDESTE.txt")
+# #   etag   = filemd5("../data/RAIS_VINC_PUB_NORDESTE.txt")
+# # }
+
+# resource "aws_s3_bucket_object" "rais_NORTE" {
+#   bucket = aws_s3_bucket.datalake.id
+#   key    = "raw-data/rais/RAIS_VINC_PUB_NORTE.txt"
+#   acl    = "private"
+#   source = "../data/RAIS_VINC_PUB_NORTE.txt"
+#   etag   = filemd5("../data/RAIS_VINC_PUB_NORTE.txt")
 # }
 
-resource "aws_s3_bucket_object" "rais_NORTE" {
-  bucket = aws_s3_bucket.datalake.id
-  key    = "raw-data/rais/RAIS_VINC_PUB_NORTE.txt"
-  acl    = "private"
-  source = "../data/RAIS_VINC_PUB_NORTE.txt"
-  etag   = filemd5("../data/RAIS_VINC_PUB_NORTE.txt")
-}
-
-# resource "aws_s3_bucket_object" "rais_SP" {
+# # resource "aws_s3_bucket_object" "rais_SP" {
 #   bucket = aws_s3_bucket.datalake.id
 #   key    = "raw-data/rais/RAIS_VINC_PUB_SP.txt"
 #   acl    = "private"

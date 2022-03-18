@@ -1,3 +1,9 @@
 *.csv
-*.txt
 *.exe
+*.txt
+
+# RAIS_VINC_PUB_SP.txt
+# RAIS_VINC_PUB_NORDESTE.txt
+# RAIS_VINC_PUB_MG_ES_RJ.txt
+# RAIS_VINC_PUB_CENTRO_OESTE.txt
+# RAIS_VINC_PUB_SUL.txt
