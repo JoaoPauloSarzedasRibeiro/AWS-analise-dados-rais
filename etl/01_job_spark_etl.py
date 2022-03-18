@@ -10,9 +10,6 @@ spark = (SparkSession.builder.appName("DeltaExercise")
 )
 
 
-# Importa o modulo das tabelas delta
-from delta.tables import *
-
 #Ler os dados da rais 2020
 rais = (
     spark
